@@ -1,0 +1,10 @@
+RowHeatMap = 
+VAR CurrentVal = SUM('cohort'[customers])
+VAR MonthZeroVal = 
+    CALCULATE(
+        SUM('cohort'[customers]), 
+        'cohort'[period_offset] = 0, 
+        ALL('cohort'[period_offset])
+    )
+RETURN
+    DIVIDE(CurrentVal, MonthZeroVal)
