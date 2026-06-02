@@ -32,7 +32,7 @@ VAR MonthZeroCustomers =
     )
 RETURN
     DIVIDE(CurrentCustomers, MonthZeroCustomers)
-
+```
  Final Dashboard
 
 <img width="1081" height="463" alt="image" src="https://github.com/user-attachments/assets/4b8537c7-7d20-4c97-84ad-e5bd23b26499" />
